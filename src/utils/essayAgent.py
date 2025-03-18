@@ -1,11 +1,7 @@
-from dotenv import load_dotenv
-
 from langgraph.graph import StateGraph, END
 from langchain_core.messages import SystemMessage, AIMessage, HumanMessage
 from pydantic import BaseModel
 from typing import TypedDict
-
-load_dotenv()
 
 class AgentState(TypedDict):
     task: str

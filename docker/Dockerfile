@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.13.2-slim AS essayAgent
+FROM python:3.13.2-slim AS essayagent
 
 # Specify Python version (optional for documentation)
 ENV PYTHON_VERSION=3.13.2
@@ -7,7 +7,7 @@ ENV PYTHON_VERSION=3.13.2
 # Install system dependencies
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-    gcc python3-dev micro nano libgl1-mesa-glx libglib2.0-0 \
+    gcc python3-dev micro nano libgl1-mesa-glx libglib2.0-0 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 

@@ -5,6 +5,9 @@ from langchain_community.tools import TavilySearchResults
 from pydantic import BaseModel
 from utils.essayAgent import EssayWriter
 from utils.Agentprompts import *
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class user(BaseModel):
     topic: str
@@ -39,5 +42,5 @@ def essay_write(data: user):
     return {"final_draft": res['essay_draft']}
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
 

@@ -82,10 +82,8 @@ pydantic_core==2.27.2
 pydantic-settings==2.8.1
 pyee==12.1.1
 Pygments==2.19.1
-pygraphviz==1.14
 python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
-pywin32==308
 PyYAML==6.0.2
 pyzmq==26.2.0
 regex==2024.11.6
