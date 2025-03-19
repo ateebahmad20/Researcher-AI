@@ -84,7 +84,7 @@ class EssayWriter:
             prompt = f'''{prompt}\n\nYour previous draft:\n\n{state['essay_draft']}
                         \n\nKeep in mind the feedback you received:\n\n{state['revised_draft']}
                     ''' 
-        task = f'{state['task']}\n\nHere is the outline I have come up with:\n\n{state['plan_draft']}'
+        task = f"{state['task']}\n\nHere is the outline I have come up with:\n\n{state['plan_draft']}"
 
         messages = [
             SystemMessage(content=prompt),

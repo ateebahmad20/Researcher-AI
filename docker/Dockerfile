@@ -1,8 +1,8 @@
 # Use an official Python runtime as a parent image
-FROM python:3.13.2-slim AS essayagent
+FROM python:3.11.11-slim AS essayagent
 
 # Specify Python version (optional for documentation)
-ENV PYTHON_VERSION=3.13.2
+ENV PYTHON_VERSION=3.11.11
 
 # Install system dependencies
 RUN apt-get update && \
